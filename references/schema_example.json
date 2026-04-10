@@ -1,0 +1,117 @@
+{
+  "_comment": "Example: Standard medical report (blood routine)",
+  "standard_report": {
+    "id": "2024-03-15_blood_routine_01",
+    "category": "blood_routine",
+    "date": "2024-03-15",
+    "items": [
+      {
+        "name": "WBC",
+        "value": 7.2,
+        "unit": "10^9/L",
+        "ref_range": "3.5-9.5",
+        "flag": "normal"
+      },
+      {
+        "name": "RBC",
+        "value": 4.5,
+        "unit": "10^12/L",
+        "ref_range": "4.3-5.8",
+        "flag": "normal"
+      },
+      {
+        "name": "HGB",
+        "value": 105,
+        "unit": "g/L",
+        "ref_range": "130-175",
+        "flag": "low"
+      },
+      {
+        "name": "PLT",
+        "value": 210,
+        "unit": "10^9/L",
+        "ref_range": "125-350",
+        "flag": "normal"
+      },
+      {
+        "name": "NEU%",
+        "value": 62.5,
+        "unit": "%",
+        "ref_range": "40-75",
+        "flag": "normal"
+      }
+    ],
+    "findings": "Hemoglobin is below the reference range."
+  },
+
+  "_comment2": "Example: Vaccination record (accumulative)",
+  "vaccination_record": {
+    "id": "vaccination_record",
+    "category": "vaccination_record",
+    "last_updated": "2024-11-20",
+    "items": [
+      {
+        "vaccine": "COVID-19 mRNA (Pfizer-BioNTech) Dose 1",
+        "date": "2021-06-15"
+      },
+      {
+        "vaccine": "COVID-19 mRNA (Pfizer-BioNTech) Dose 2",
+        "date": "2021-07-10"
+      },
+      {
+        "vaccine": "Influenza 2023/2024",
+        "date": "2023-10-20"
+      },
+      {
+        "vaccine": "Tetanus-Diphtheria (Td) Booster",
+        "date": "2024-02-28"
+      }
+    ]
+  },
+
+  "_comment3": "Example: Imaging report",
+  "imaging_report": {
+    "id": "2024-06-20_imaging_report_01",
+    "category": "imaging_report",
+    "date": "2024-06-20",
+    "items": [
+      {
+        "name": "Chest X-ray PA View",
+        "value": "No active pulmonary disease. Heart size normal.",
+        "unit": "N/A",
+        "flag": "normal"
+      }
+    ],
+    "findings": "No significant abnormalities detected."
+  },
+
+  "_comment4": "Example: Qualitative test result",
+  "infection_markers": {
+    "id": "2024-08-10_infection_markers_01",
+    "category": "infection_markers",
+    "date": "2024-08-10",
+    "items": [
+      {
+        "name": "CRP",
+        "value": 45.2,
+        "unit": "mg/L",
+        "ref_range": "0-5",
+        "flag": "critical_high"
+      },
+      {
+        "name": "PCT",
+        "value": 0.08,
+        "unit": "ng/mL",
+        "ref_range": "0-0.05",
+        "flag": "high"
+      },
+      {
+        "name": "HIV Ab",
+        "value": "negative",
+        "unit": "N/A",
+        "flag": "negative"
+      }
+    ],
+    "findings": "CRP is critically elevated. PCT slightly above reference. Consider infection workup."
+  }
+}
